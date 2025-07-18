@@ -30,7 +30,7 @@ const About = () => {
             </div>
 
             <div className="grid sm:grid-cols-3 gap-4">
-              <Card className="p-6 text-center card-hover">
+              <Card className="p-6 text-center glass-card">
                 <User className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-semibold mb-2">Problem Solver</h3>
                 <p className="text-sm text-muted-foreground">
@@ -38,7 +38,7 @@ const About = () => {
                 </p>
               </Card>
               
-              <Card className="p-6 text-center card-hover">
+              <Card className="p-6 text-center glass-card">
                 <Code className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-semibold mb-2">Clean Code</h3>
                 <p className="text-sm text-muted-foreground">
@@ -46,7 +46,7 @@ const About = () => {
                 </p>
               </Card>
               
-              <Card className="p-6 text-center card-hover">
+              <Card className="p-6 text-center glass-card">
                 <Rocket className="h-8 w-8 text-accent mx-auto mb-3" />
                 <h3 className="font-semibold mb-2">Innovation</h3>
                 <p className="text-sm text-muted-foreground">

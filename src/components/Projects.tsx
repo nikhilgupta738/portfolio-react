@@ -59,7 +59,7 @@ const Projects = () => {
         {/* Featured Projects */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
-            <Card key={index} className="overflow-hidden card-hover">
+            <Card key={index} className="overflow-hidden glass-card">
               <div className="aspect-video bg-muted flex items-center justify-center">
                 <Folder className="h-16 w-16 text-muted-foreground" />
               </div>
@@ -99,7 +99,7 @@ const Projects = () => {
           <h3 className="text-2xl font-semibold mb-8 text-center">Other Projects</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {otherProjects.map((project, index) => (
-              <Card key={index} className="p-6 card-hover">
+              <Card key={index} className="p-6 glass-card">
                 <div className="flex items-start justify-between mb-3">
                   <Folder className="h-8 w-8 text-accent flex-shrink-0" />
                   <div className="flex gap-2">

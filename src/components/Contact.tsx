@@ -124,7 +124,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="p-6">
+          <Card className="p-6 glass-card">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Label htmlFor="name">Name</Label>

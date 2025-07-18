@@ -57,7 +57,7 @@ const Internships = () => {
 
         <div className="space-y-8">
           {internships.map((internship, index) => (
-            <Card key={index} className="p-6 card-hover">
+            <Card key={index} className="p-6 glass-card">
               <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
