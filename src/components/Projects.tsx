@@ -3,6 +3,9 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Folder } from 'lucide-react';
 import watchHubImg from '@/assets/watchHub.png';
+import fraudshieldImg from '@/assets/fraudshield.png';
+import housepriceImg from '@/assets/housePrice.png';
+import alienImg from '@/assets/alien.png';
 
 const Projects = () => {
   const projects = [
@@ -17,29 +20,29 @@ const Projects = () => {
     },
     {
       title: 'FraudShield - AI-Powered Fraud Detection',
-      description: '',
-      image: '/placeholder.svg',
-      technologies: ['Vue.js', 'Firebase', 'Vuex', 'CSS3'],
-      githubUrl: '#',
-      liveUrl: '#',
+      description: 'This project aims to detect fraudulent online transactions using machine learning models. It includes a Flask-based backend, a responsive HTML/CSS frontend, and pretrained ML models for prediction.',
+      image: fraudshieldImg,
+      technologies: ['HTML', 'CSS', 'Python', 'Flask', 'Numpy', 'Pandas', 'Scikit-learn', 'Rest API'],
+      githubUrl: 'https://github.com/nikhilgupta738/FraudShield-AI-Powered-Payment-Fraud-Detection',
+      // liveUrl: 'https://fraud-shield-ai-powered-payment-fraud-detection-g5xb3kojz.vercel.app/',
       featured: true,
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application using React and OpenWeather API. Features location-based weather, 7-day forecast, and beautiful data visualizations.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'Chart.js', 'REST API', 'Responsive Design'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: false,
+      title: 'House Price Prediction',
+      description: 'A house price prediction web application that uses machine learning to predict house prices based on various features. ',
+      image: housepriceImg,
+      technologies: ['HTML', 'CSS', 'REST API', 'Python', 'Flask', 'Numpy', 'Pandas', 'Scikit-learn'],
+      githubUrl: 'https://github.com/nikhilgupta738/house-price-prediction',
+      // liveUrl: '#',
+      featured: false ,
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and Tailwind CSS. Features smooth animations, dark mode, and optimized performance.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Vite'],
-      githubUrl: '#',
-      liveUrl: '#',
+      title: 'Alien Shooter Game using pygame',
+      description: 'A retro-style alien shooter game built with Python and Pygame. Features include multiple levels, power-ups, and enemy AI.',
+      image: alienImg,
+      technologies: ['Python', 'Pygame'],
+      githubUrl: 'https://github.com/nikhilgupta738/alien_invasion',
+      // liveUrl: '#',
       featured: false,
     },
   ];
