@@ -5,43 +5,30 @@ import { GraduationCap, Calendar, Award } from 'lucide-react';
 const Internships = () => {
   const internships = [
     {
-      title: 'Software Development Intern',
-      company: 'Google',
-      period: 'Summer 2023',
-      duration: '3 months',
-      description: 'Worked on improving search algorithms and contributed to the development of new features for Google Search. Collaborated with senior engineers and gained hands-on experience with large-scale systems.',
+      title: 'DevOps Intern',
+      company: 'Lumenore',
+      period: 'July - Aug 2024',
+      duration: '2 months',
+      description: 'Worked on POC(Proof of Concept) for a new feature in the Lumenore. Collaborated with cross-functional teams to enhance deployment pipelines.',
       achievements: [
-        'Improved search result relevance by 15%',
-        'Contributed to 3 major feature releases',
-        'Received excellent performance review'
+        ' Packaged a Python-based analytics application into a microservice using Cloud Native Application Bundles (CNAB) and Porter for container deployment.',
+        'Used Docker, CI/CD, and GitHub Actions to automate builds and improve deployment efficiency.',
+        'Collaborated with DevOps engineers and developers to test, version, and publish the service on DockerHub and GitHub Packages'
       ],
-      technologies: ['Python', 'TensorFlow', 'Go', 'Kubernetes'],
+      technologies: ['Kubernetes(basic)', 'Cloud Native Applications', 'Git', 'Docker', 'Porter', 'AWS(basic)'],
     },
     {
-      title: 'Frontend Development Intern',
-      company: 'Microsoft',
-      period: 'Summer 2022',
-      duration: '3 months',
-      description: 'Developed user interfaces for Microsoft Teams using React and TypeScript. Focused on accessibility improvements and mobile responsiveness.',
+      title: 'Software Devlopment Intern',
+      company: 'Netlink Software Pvt Ltd',
+      period: 'Aug - Sept 2023',
+      duration: '2 months',
+      description: 'Gained hands-on experience with Python programming, focusing on real-world logic building and scripting',
       achievements: [
-        'Enhanced accessibility score by 40%',
-        'Optimized mobile performance',
+        'Explored the fundamentals of machine learning, working with libraries like scikit-learn, NumPy,  and Pandas to understand data preprocessing and model building',
+        
         'Led intern presentation session'
       ],
-      technologies: ['React', 'TypeScript', 'Azure', 'CSS3'],
-    },
-    {
-      title: 'Web Development Intern',
-      company: 'Local Tech Startup',
-      period: 'Summer 2021',
-      duration: '2 months',
-      description: 'Built and maintained the company website and internal tools. Learned full-stack development and gained experience with modern web technologies.',
-      achievements: [
-        'Redesigned company website',
-        'Reduced page load time by 50%',
-        'Implemented user authentication system'
-      ],
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js'],
+      technologies: ['Python', 'Presentation', 'Collaboration'],
     },
   ];
 

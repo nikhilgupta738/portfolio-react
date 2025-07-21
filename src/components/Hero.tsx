@@ -28,12 +28,12 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
             Hi, I'm{' '}
             <span className="gradient-text">
-              Your Name
+              Nikhil Gupta
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in">
-            Full Stack Developer & Software Engineer
+            Graduated and Open to Work
           </p>
           
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
@@ -51,11 +51,14 @@ const Hero = () => {
             </Button>
             
             <Button
+              asChild
               variant="outline"
               className="glass-card border-glass-border text-foreground hover:bg-glass-bg px-8 py-3 text-lg font-semibold glow-button"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <a href="/NikhilGupta_Resume.pdf" download>
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </a>
             </Button>
           </div>
 

@@ -1,5 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { User, Code, Rocket } from 'lucide-react';
+import profileImg from '@/assets/profile.jpg'; 
 
 const About = () => {
   return (
@@ -61,7 +62,11 @@ const About = () => {
               <div className="w-80 h-80 bg-gradient-to-br from-accent to-accent/70 rounded-full p-1">
                 <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
                   <div className="w-72 h-72 bg-gradient-to-br from-muted to-surface rounded-full flex items-center justify-center">
-                    <User size={120} className="text-accent" />
+                    <img
+                      src={profileImg}
+                      alt="Profile"
+                      className="w-full h-full rounded-full object-cover shadow-lg"
+                    />
                   </div>
                 </div>
               </div>

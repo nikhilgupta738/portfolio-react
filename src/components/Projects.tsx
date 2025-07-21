@@ -2,21 +2,22 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Folder } from 'lucide-react';
+import watchHubImg from '@/assets/watchHub.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React frontend, Node.js backend, and PostgreSQL database. Features include user authentication, payment processing, and admin dashboard.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'JWT'],
-      githubUrl: '#',
-      liveUrl: '#',
+      title: 'WatchHub - Movie Discovery Platform',
+      description: 'A Movie discovery platform built with ReactJS, Tailwind CSS personalized recommendations, and a sleek UI.',
+      image: watchHubImg,
+      technologies: ['React', 'Tailwind CSS',],
+      githubUrl: 'https://github.com/nikhilgupta738/WatchHub',
+      liveUrl: 'https://watch-hub-mauve.vercel.app/',
       featured: true,
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application built with Vue.js and Firebase. Real-time updates, drag-and-drop functionality, and team collaboration features.',
+      title: 'FraudShield - AI-Powered Fraud Detection',
+      description: '',
       image: '/placeholder.svg',
       technologies: ['Vue.js', 'Firebase', 'Vuex', 'CSS3'],
       githubUrl: '#',
@@ -60,8 +61,16 @@ const Projects = () => {
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
             <Card key={index} className="overflow-hidden glass-card">
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <Folder className="h-16 w-16 text-muted-foreground" />
+              <div className="aspect-video bg-muted flex items-center justify-center overflow-hidden">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <Folder className="h-16 w-16 text-muted-foreground" />
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
