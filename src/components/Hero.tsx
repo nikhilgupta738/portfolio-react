@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Download, Mail } from 'lucide-react';
-import heroBackground from '@/assets/hero-background.jpg';
+import heroBackground from '@/assets/hero_bg.png';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -20,7 +20,13 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `url(${heroBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
     >
       <div className="floating-particles"></div>
       <div className="container-width section-padding text-center relative z-10">

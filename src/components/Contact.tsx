@@ -3,9 +3,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { Youtube } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,14 +17,44 @@ const Contact = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Replace this with your actual Formspree endpoint
+  const formEndpoint = 'https://formspree.io/f/movlevoq';
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      const response = await fetch(formEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again later.",
+          variant: 'destructive',
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again later.",
+        variant: 'destructive',
+      });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -36,19 +68,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'ng929439@gmail.com',
+      href: 'mailto:ng929439@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+91 7380635874',
+      href: 'tel:+917380635874'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Your City, Country',
+      value: 'Uttar Pradesh, India',
       href: '#'
     }
   ];
@@ -57,17 +89,17 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourprofile'
+      href: 'https://linkedin.com/in/nikhilgupta738'
     },
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/yourusername'
+      href: 'https://github.com/nikhilgupta738'
     },
     {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com/yourusername'
+      icon: Youtube,
+      label: 'YouTube',
+      href: 'https://www.youtube.com/@doesntknkw'
     }
   ];
 

@@ -9,7 +9,7 @@ const Footer = () => {
             Built with <Heart className="h-4 w-4 text-red-400" fill="currentColor" /> using React & Tailwind CSS
           </p>
           <p className="text-xs mt-2 opacity-80">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Nikhil Gupta. All rights reserved.
           </p>
         </div>
       </div>
